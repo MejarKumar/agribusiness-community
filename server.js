@@ -9,10 +9,11 @@ const client = require('./routes/client');
 const { join } = require("path");
 const cors = require("cors");
 
+
 connectDB();
 app.use(cors());
 app.use(express.static("public"));
-const publicFolder = join(__dirname, 'client', 'build');
+const publicFolder = join(__dirname, '.', 'client', 'build');
 app.use('/', express.static(publicFolder));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
