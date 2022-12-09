@@ -1,0 +1,24 @@
+:root {
+    --primary: #125C13;
+}
+
+.custom-btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: bisque;
+    cursor: pointer;
+    background-color: var(--primary);
+}
+
+.custom-btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #032D3C;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+}

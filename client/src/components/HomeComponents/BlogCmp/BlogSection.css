@@ -1,0 +1,23 @@
+
+.blog_section{
+    background-color:#b6ffce44;
+   min-height: 80vh;
+   
+  
+}
+
+.wrapper{
+    display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 20rem));
+        gap: 2rem;
+        justify-content: center;
+        
+}
+
+.more_blog_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}

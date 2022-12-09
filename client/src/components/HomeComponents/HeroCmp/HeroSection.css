@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --primary: #125C13;
+}
+
+.parallex{
+    background: url("../../../../public//Image/home\ hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* min-height: 100vh; */
+}
+
+
+.hero_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "left_part right_part";
+   height: 100vh;
+}
+
+.left_part {
+    grid-area: left_part;
+    padding: 10rem 10rem;
+}
+
+.right_part {
+    grid-area: right_part;
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: var(--primary);
+    margin: 20px 0px;
+}
+.para{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: justify;
+}
+.signup {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+ 
+    font-size: 18px;
+    color: bisque;
+    cursor: pointer;
+    background-color: var(--primary);
+    margin: 4%;
+    margin-left: 0px ;
+}
+
+.signup:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #032D3C;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+}

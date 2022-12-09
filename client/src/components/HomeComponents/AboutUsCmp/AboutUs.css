@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.about_section{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "left_part right_part";
+     background: #f6fbf4a8;  
+     height: fit-content; 
+}
+
+.left_part {
+    grid-area: left_part;
+    /* height: fit-content; */
+    height: 80vh;
+}
+
+.right_part {
+    grid-area: right_part;
+    padding: 10%;
+    margin-left: -10%;
+    
+}
+.left_part img{
+    height: 100%;
+}
+
+
